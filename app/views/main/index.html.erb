@@ -1,0 +1,26 @@
+<h2>PopPapi</h2>
+
+<div class="text-container" id="original-text">
+  <% @check_data.each do |ph| %>
+  <p>
+    <% ph.each do |sent| %>
+      <% if sent[:state] %>
+        <span class="repeat-part" id="r<%=sent[:state]%>" onclick="show_repeat(this);" data="<%=sent[:state]%>">
+          <%= sent[:text] %>
+        </span>
+      <% else %>
+        <%= sent[:text] %>
+      <% end %>
+    <% end %>
+  </p>
+  <% end %>
+</div>
+
+<div class="text-container" id="repeat-text">
+  <div id="repeat-text-title"></div>
+  <div id="repeat-text-content"></div>
+  <%# for item in @repeats %>
+    <%# raw(item) %>
+  <%# end %>
+
+</div>

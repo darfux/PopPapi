@@ -1,0 +1,54 @@
+// Place all the styles related to the Main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.text-container{
+  display: inline-block;
+  width: 48%;
+  // height: 1200px;
+  vertical-align: top;
+}
+
+#original-text{
+  background-color: #CECECE;
+}
+
+#repeat-text{
+  // background-color: #BBB;
+  border: solid 1px black;
+  position: fixed;
+  top: 1em;
+  overflow-y: auto;
+  height: 90%;
+  margin-left: 2em;
+}
+
+#repeat-text-title{
+  padding-bottom: 0.5em;
+  border-bottom: dashed 1px gray;
+  font-weight: 500;
+}
+
+
+.repeat-part{
+  color: red;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.resitem{
+  a{
+    text-decoration: none;
+  }
+  em{
+    color: red;
+  }
+  .abs{
+    color: gray;
+  }
+  margin-bottom: 2em;
+}
+.result_title_abs{
+  color: black !important;
+}
